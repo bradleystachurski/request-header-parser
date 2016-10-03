@@ -2,12 +2,13 @@
 
 var express = require('express');
 var useragent = require('useragent');
+var ip = require('ip');
 
 var app = express();
 var port = process.env.PORT || 3000;
 
 app.get('/', function(req, res) {
-    var ip = req.ip;
+    var ipAddress = ip.address();
     var language = req.headers['accept-language'];
     var agent = useragent.parse(req.headers['user-agent']);
 
@@ -15,7 +16,7 @@ app.get('/', function(req, res) {
     language = language.split(',')[0];
 
     var responseObject = {
-        "ipaddress": ip,
+        "ipaddress": ipAddress,
         "language": language,
         "software": agent
     };
