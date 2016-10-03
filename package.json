@@ -1,0 +1,25 @@
+{
+  "name": "request-header-parser",
+  "version": "1.0.0",
+  "description": "FreeCodeCamp Request Header Parser Microservice coding challenge",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.14.0",
+    "useragent": "^2.1.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bradleystachurski/request-header-parser.git"
+  },
+  "author": "Bradley Stachurski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bradleystachurski/request-header-parser/issues"
+  },
+  "homepage": "https://github.com/bradleystachurski/request-header-parser#readme"
+}
